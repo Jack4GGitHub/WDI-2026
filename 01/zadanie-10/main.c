@@ -1,16 +1,27 @@
 #include <stdio.h>
 
 int main() {
-    int liczba;
+    float ocena;
+    float suma = 0.0;
+    float srednia;
+    int niedostateczne = 0;
+    int i;
 
-    printf("Podaj liczbe calkowita: ");
-    scanf("%d", &liczba);
+    for (i = 1; i <= 5; i++) {
+        printf("Podaj ocene nr %d: ", i);
+        scanf("%f", &ocena);
+        
+        suma += ocena;
 
-    if (liczba > 0 && liczba % 2 == 0) {
-        printf("Liczba jest jednoczesnie dodatnia i parzysta.\n");
-    } else {
-        printf("Liczba nie spelnia obu warunkow jednoczesnie.\n");
+        if (ocena == 1.0f) {
+            niedostateczne++;
+        }
     }
+
+    srednia = suma / 5.0;
+
+    printf("\nSrednia dla 5 ocen wynosi: %.2f\n", srednia);
+    printf("Liczba ocen niedostatecznych: %d\n", niedostateczne);
 
     return 0;
 }
