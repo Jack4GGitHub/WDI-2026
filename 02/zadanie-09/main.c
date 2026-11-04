@@ -19,6 +19,7 @@ int sil(int a)
 int main()
 {
   int n;
+  printf("Podaj liczbe (n)!: ");
   scanf("%d", &n);
   printf("%d \n", sil(n));
 

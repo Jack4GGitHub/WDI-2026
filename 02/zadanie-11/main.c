@@ -17,6 +17,8 @@ int main()
   int liczbaP;
   int wykladnikP;
 
+  printf("Podaj liczbe oraz wykladnik, a ja podam ci ile to wynosi: \n");
+  
   scanf("%d", &liczbaP);
   scanf("%d", &wykladnikP);
 

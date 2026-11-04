@@ -6,7 +6,7 @@ int potega(int liczba, int wykladnik)
   int wynik;
   int i;
   wynik = liczba;
-  for(i = 0 ; i < wykladnik; i++){
+  for(i = 1 ; i < wykladnik; i++){
     wynik *= liczba;
   }
   return wynik;
@@ -15,6 +15,8 @@ int potega(int liczba, int wykladnik)
 int main()
 {
   int liczba , wykladnik;
+
+  printf("Podaj Liczbe oraz jej wykladnik: \n");
   scanf("%d",&liczba);
   scanf("%d",&wykladnik);
 
