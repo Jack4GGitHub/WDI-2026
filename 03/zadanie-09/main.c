@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void bubbleSort(int tablicaLiczb[], int rozmiarTablicy)
+void bubble_sort(int tablicaLiczb[], int rozmiarTablicy)
 {
     int i;
     int j;
@@ -35,7 +35,7 @@ int main(void)
         scanf("%d", &mojeLiczby[iTablicy]);
     }
 
-    bubbleSort(mojeLiczby, rozmiarTablicy);
+    bubble_sort(mojeLiczby, rozmiarTablicy);
 
     printf("\nPosortowana tablica:\n");
     for (iTablicy = 0; iTablicy < rozmiarTablicy; iTablicy++)
